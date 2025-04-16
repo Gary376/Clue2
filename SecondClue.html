@@ -1,0 +1,69 @@
+<!-- Hey! If your looking for the password could you try and maybe just solve it? -->
+<!-- Smart of you to look at the page's code since this is just some 15 year old who can't pay for a domain or server -->
+<!-- If your trying to solve this for someone that isn't you please don't. Especially if your solving this for someone named Sofia -->
+<!-- Besides all that have fun solving my puzzle! Good luck, you'll need it -->
+
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clue 2</title>
+</head>
+<main>
+<style>
+
+main {
+
+    border: 2px solid whitesmoke;
+
+}
+
+.CenteredText {
+
+    text-align: center; 
+    margin: auto; 
+    width: 100%; 
+    padding: 70px 0; 
+    height: 590px; 
+    line-height: 500px;
+
+}
+
+body {
+
+background-color: rgb(50, 50, 50);
+
+}
+
+</style>
+    <body>
+        <form id="passwordForm">
+            <h2 class="CenteredText" style="color: whitesmoke;">Your not going to complete this, give up.</h2>
+            <label for="pwd" style="position: absolute; left: 475px; top: 370px; color: whitesmoke;">Password:</label>
+            <input type="password" id="password" name="pwd" style="position: absolute; left: 550px; top: 370px;" required>
+            <button type="submit" style="position: absolute; left: 740px; top: 370px;">Submit Password</button>
+            <p id="message" style="color: red; position: absolute; left: 625px; top: 385px;"></p>
+        </form>
+
+
+
+        <script>
+            document.getElementById('passwordForm').addEventListener('submit', function(event) {
+              event.preventDefault();
+              const password = document.getElementById('password').value;
+              const message = document.getElementById('message');
+        
+              if (password === 'apathy') {
+                message.style.color = 'green';
+                message.textContent = 'Password accepted.';
+              } else {
+                message.style.color = 'red';
+                message.textContent = 'Incorrect password.';
+              }
+            });
+          </script>
+
+    </body>
+</main>
+
+</html>
+
